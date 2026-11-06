@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ed">
+  <meta name="description" content="Download the EGGSHELL Android app and order fresh eggs.">
+  <title>EGGSHELL — Download the App</title>
+  <style>
+    :root {
+      --cream: #fff8ed;
+      --paper: #fffdf9;
+      --brown: #65391f;
+      --brown-2: #87502d;
+      --orange: #d77b32;
+      --muted: #806f61;
+      --line: #eadccc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; color: var(--brown);
+      background:
+        radial-gradient(circle at 15% 12%, rgba(215,123,50,.12), transparent 27rem),
+        linear-gradient(145deg, #fff8ed, #f8ecdc);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: grid; place-items: center; padding: 28px 16px;
+    }
+    .page { width: min(100%, 520px); }
+    .card {
+      overflow: hidden; background: rgba(255,253,249,.94);
+      border: 1px solid rgba(234,220,204,.9); border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(83,49,24,.12);
+    }
+    .hero { padding: 42px 28px 30px; text-align: center; }
+    .mark {
+      width: 86px; height: 104px; margin: 0 auto 18px; position: relative;
+      background: linear-gradient(145deg, #f5c98d, #d77b32);
+      border-radius: 52% 48% 48% 48% / 62% 62% 38% 38%;
+      transform: rotate(2deg);
+      box-shadow: inset -8px -9px 0 rgba(101,57,31,.10), 0 12px 25px rgba(215,123,50,.18);
+    }
+    .mark:after {
+      content: ""; position: absolute; width: 27px; height: 36px;
+      left: 29px; top: 32px; border-radius: 50%;
+      background: rgba(255,248,237,.82);
+    }
+    .brand { margin: 0; letter-spacing: .19em; font-size: 27px; font-weight: 850; }
+    .tagline { margin: 11px 0 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+    .content { padding: 0 28px 30px; text-align: center; }
+    .headline { font-size: clamp(25px, 6vw, 33px); line-height: 1.16; margin: 8px 0 12px; letter-spacing: -.04em; }
+    .description { margin: 0 auto 24px; max-width: 360px; color: var(--muted); line-height: 1.65; font-size: 14px; }
+    .download {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; min-height: 58px; padding: 15px 20px; border-radius: 15px;
+      color: white; background: linear-gradient(100deg, var(--brown), var(--brown-2));
+      text-decoration: none; font-size: 16px; font-weight: 750;
+      box-shadow: 0 9px 20px rgba(101,57,31,.2); transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .download:hover { transform: translateY(-2px); box-shadow: 0 13px 25px rgba(101,57,31,.24); }
+    .download:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+    .download svg { width: 21px; height: 21px; }
+    .meta { margin: 12px 0 0; color: #927e6b; font-size: 12px; }
+    .steps {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px;
+      margin-top: 26px; text-align: left;
+    }
+    .step { background: var(--cream); border: 1px solid var(--line); border-radius: 13px; padding: 12px 10px; }
+    .number { display: block; color: var(--orange); font-size: 11px; font-weight: 800; margin-bottom: 5px; }
+    .step strong { display: block; font-size: 12px; line-height: 1.35; }
+    .note { margin: 18px 0 0; color: var(--muted); font-size: 11px; line-height: 1.55; }
+    footer { text-align: center; color: #927e6b; font-size: 11px; padding: 18px 8px 0; }
+    @media (max-width: 380px) {
+      .hero { padding: 32px 20px 24px; }
+      .content { padding: 0 20px 24px; }
+      .steps { gap: 6px; }
+      .step { padding: 10px 7px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-label="EGGSHELL app download">
+      <header class="hero">
+        <div class="mark" aria-hidden="true"></div>
+        <h1 class="brand">EGGSHELL</h1>
+        <p class="tagline">Fresh eggs. Simple ordering.</p>
+      </header>
+      <div class="content">
+        <h2 class="headline">Your eggs, just a tap away.</h2>
+        <p class="description">
+          Download the EGGSHELL app to explore chicken, duck and quail eggs
+          and place your order from your Android phone.
+        </p>
+
+        <!-- Keep eggshell.apk in the same folder as this index.html file. -->
+        <a class="download" href="./eggshell.apk" download="EGGSHELL.apk">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3v11m0 0 4-4m-4 4-4-4M4 17v3h16v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Download Android App
+        </a>
+        <p class="meta">Android app · APK download</p>
+
+        <div class="steps" aria-label="Installation steps">
+          <div class="step"><span class="number">STEP 01</span><strong>Download the APK</strong></div>
+          <div class="step"><span class="number">STEP 02</span><strong>Open the downloaded file</strong></div>
+          <div class="step"><span class="number">STEP 03</span><strong>Install EGGSHELL</strong></div>
+        </div>
+        <p class="note">
+          Android may ask you to allow installation from your browser or file manager.
+          Only install this app from the official EGGSHELL download link.
+        </p>
+      </div>
+    </section>
+    <footer>© <span id="year"></span> EGGSHELL</footer>
+  </main>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
